@@ -41,6 +41,10 @@
   cursor: pointer;
 }
 
+.fa-dragon {
+  margin: 0 15px;
+}
+
 .navbar-menu {
   display: flex;
   align-items: center;
@@ -87,7 +91,74 @@
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 700px) {
+/* Hero Section */
+.main {
+  background: #1a2035;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.main-content h1 {
+  background-image: linear-gradient(to top, #da4167 0%, #f78764 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+}
+
+.main-content h2 {
+  background-image: linear-gradient(to top, #083d77 0%, #f4d35e 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+}
+
+.main-content p {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.main-content button {
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #da4167 0%, #f78764 100%);
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.main-content button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.main-content button:hover {
+  background: #083d77;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 750px) {
   .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -180,6 +251,27 @@
 
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
 
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 95vh;
+    max-width: 1300px;
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .main-content h1 {
+    margin-top: 2rem;
+  }
+
+  .main-content button {
+    margin-top: 3rem;
   }
 }
